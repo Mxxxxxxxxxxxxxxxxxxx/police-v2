@@ -1,0 +1,10 @@
+We Need to Make function to get rundom index from 
+the array and not repeat the index.
+
+Array.from(iterable, mapFunction, this);
+
+how are we make sure the name don't reapet in the saddme crew ?!
+
+make if condition in the function who make the crow.
+
+

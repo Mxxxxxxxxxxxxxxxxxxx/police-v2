@@ -1,0 +1,555 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Cairo', sans-serif;
+
+
+}
+
+body{
+    background-color: #f5f6fa;
+}
+
+
+header{
+    display: flex;
+    top: 0;
+    left:0;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 1% ; */
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 5px 2px 6px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    width: 100%;
+
+}
+header #egy{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin:0 20px;
+}
+header .logo img{
+    width: 70px;
+    margin: 10px 20px;
+}
+header .logo{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+header .logo h1{
+    font-size: 22px;
+    padding: 0 10px;
+}
+
+header .text{
+    text-align: center;
+    line-height: 1.5;
+    font-size: 24px;
+    
+}
+header .text h3{
+    color: #0097e6
+
+    
+}
+header .text p{
+    color: #00a8ff;
+    font-size: 20px;
+    
+}
+
+
+/* Start Make Popup */
+
+.popup{
+    width: 100%;
+    height: 100vh;
+    background:  rgba(187, 187, 187, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index:9999;
+    display: none;
+}
+
+/* End Make Popup */
+
+.NAMES{
+    position: relative;
+    flex-direction: column;
+    text-align: right;
+    max-width: 800px;
+    padding: 20px 50px;
+    height: 400px;
+    background-color: #fff;
+    /* background-color: #fafafa; */
+    border: 1px solid #ddd ;
+    margin:300px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* border-radius: 6px; */
+}
+
+
+.NAMES h5{
+    font-size: 26px;
+    color: #0097e6;
+    border-bottom: 1px solid #ddd;
+    margin: 10px 0;
+    padding: 5px;
+}
+
+.NAMES #cancle{
+    background-color: #c23616;
+    cursor: pointer;
+    width: 70px;
+}
+
+.NAMES input[type="text"] {
+    text-align: center;
+    font-size: 18px;
+    padding: 5px 50px;
+    outline: none;
+    /* border-radius: 6px; */
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+    /* background-color: #f5f6fa; */
+    width: 80%;
+    transition: all 0.5s;
+}
+
+.NAMES input[type="text"]:hover{
+    border: 1px solid #0097e6;
+}
+
+.NAMES input:focus{
+    border: 1px solid #0097e6;
+    background-color: #f5f6fa;
+}
+
+.NAMES .type input[type="radio"] {
+    width: 45%;
+    cursor: pointer;
+    text-align: right;
+    margin-top: 20px;
+}
+
+.NAMES i {
+    /* border: 1px solid #ddd; */
+    padding: 5px;
+    position: absolute;
+    top: 140px;
+    right: 60px;
+    color: #0097e6;
+}
+
+.NAMES .type label{
+    cursor: pointer;
+}
+
+.NAMES .type{
+    margin-top: 20px;
+}
+.NAMES .type p{
+    /* color: #00a8ff; */
+    font-size: 20px;
+}
+
+.NAMES button{
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    font-size: 18px ;
+    padding: 5px ;
+    margin: 30px 0;
+    cursor: pointer;
+    transition:all 0.5s;
+    background-color: #00a8ff;
+    transition: all 0.3s ease-in-out;
+    color: #fff;
+    
+}
+
+.NAMES button:hover{
+    background-color: #0097e6;
+}
+
+.table-container {
+    overflow-x: auto;
+    margin-top: 50px;
+}
+
+.timetable {
+    border-collapse: collapse;
+    width: 99%;
+    /* max-width: 800px; */
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    margin-top: 5%;
+    color: #000;
+}
+
+.timetable th,
+.timetable td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.timetable th {
+    background-color: #8c7ae6;
+    color: #fff;
+}
+
+.timetable td:first-child {
+    font-weight: bold;
+    background-color: #f5f6fa;
+    color: #000;
+}
+
+
+.actionBtns{
+    width: 200px;
+    margin:  auto;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    /* padding: 10px; */
+    margin-bottom: 60px;
+}
+.actionBtns button{
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 6px;
+    font-size:15px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    margin-left: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 80px;
+}
+
+.actionBtns #actionbtn{
+    background-color: #44bd32;
+    color: #f2f2f2;
+}
+
+.actionBtns #actionbtn:hover{
+    background-color: #4cd137;
+}
+
+
+.actionBtns #addBtn{
+    background-color:#e1b12c;
+    color: #fff;
+}
+.actionBtns #addBtn:hover{
+    background-color:#fbc531;
+    color: #fff;
+}
+.actionBtns #crewBtn{
+    background-color:#0097e6;
+    color: #fff;
+}
+.actionBtns #crewBtn:hover{
+    background-color:#00a8ff;
+    color: #fff;
+}
+
+.tableOfNames{
+    display: none;
+    margin-bottom: 150px;
+}
+.tableOfNames table{
+    border-collapse: collapse;
+    width:95%;
+    /* max-width: 800px; */
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+    /* padding: 20px; */
+}
+
+/* popup For Master buttom */
+
+.popupForMasterBtn{
+    position: fixed;
+    z-index: 999;
+    background: rgba(187, 187, 187, 0.8);
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    display: none;
+}
+
+.popupForMasterBtn .inner{
+    background-color: #fff;
+    width: 400px;
+    padding: 10px;
+    margin: 400px auto;
+    text-align: right;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    height: 150px;
+
+}
+
+.popupForMasterBtn .inner h3{
+    border-bottom: 1px solid;
+    color: #0097e6;
+    margin: 5px;
+}
+
+.popupForMasterBtn .inner p{
+    font-size: 15px;
+    padding: 10px;
+    opacity: 0.7;
+}
+.popupForMasterBtn .inner button{
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-size: 15px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 6px;
+    background-color: #0097e6;
+}
+
+#clearAllNames{
+    border: none;
+    outline: none;
+    background-color: #c23616;
+    color: #fff;
+    border-radius: 6px;
+    padding: 10px;
+    margin:20px;
+    cursor: pointer;
+}
+
+.tableOfNames table th td{
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.tableOfNames table th {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+.tableOfNames table td {
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+.show {
+    display: flex;
+}
+.run{
+    display: block;
+}
+
+footer{
+    width: 100%;
+    background-color: #0097e6;
+    position: fixed;
+    bottom:0;
+    text-align: center;
+    padding: 5px;
+    color:#fff;
+
+}
+
+
+@media (max-width: 768px){
+    .NAMES {
+    
+            flex-direction: column;
+            text-align: right;
+            max-width: 250px;
+            padding: 10px 30px;
+            height: 300px;
+            background-color: #fff;
+            /* background-color: #fafafa; */
+            border: 1px solid #ddd;
+            margin: 200px auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            /* border-radius: 6px; */
+            position: relative;
+        }
+    
+        .NAMES i{
+            /* border: 1px solid #ddd; */
+            padding: 5px;
+            position: absolute;
+            top: 105px;
+            right: 30px;
+            color: #0097e6;
+        }
+        .NAMES h5 {
+            font-size: 14px;
+            color: #0097e6;
+        }
+    
+        .NAMES #cancle {
+            background-color: #c23616;
+            cursor: pointer;
+            width: 50px;
+        }
+
+        .popupForMasterBtn .inner {
+            background-color: #fff;
+            width: 300px;
+            padding: 10px;
+            margin: 300px auto;
+            text-align: right;
+            border-radius: 6px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: relative;
+            height: 150px;
+
+        }
+
+        .popupForMasterBtn .inner h3 {
+            border-bottom: 1px solid;
+            color: #0097e6;
+            margin: 5px;
+        }
+
+        .popupForMasterBtn .inner p {
+            font-size: 12px;
+            padding: 10px;
+            opacity: 0.7;
+        }
+
+        .popupForMasterBtn .inner button {
+            position: absolute;
+            left: 20px;
+            bottom: 20px;
+            border: none;
+            outline: none;
+            padding: 5px;
+            font-size: 12px;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 6px;
+            background-color: #0097e6;
+        }
+
+        .NAMES input[type="text"] {
+            text-align: center;
+            font-size: 14px;
+            padding: 5px 40px;
+            outline: none;
+            /* border-radius: 6px; */
+            border: 1px solid #ddd;
+            margin-bottom: 5px;
+            /* background-color: #f5f6fa; */
+            width: 70%;
+            transition: all 0.5s;
+        }
+        .NAMES input[type="text"]::placeholder {
+            color: rgba(33, 2, 9, 0.4);
+        }
+    
+        .NAMES input[type="text"]:hover {
+            border: 1px solid #0097e6;
+        }
+    
+        .NAMES input:focus {
+            border: 1px solid #0097e6;
+            background-color: #dcdde1;
+        }
+    
+        .NAMES .type input[type="radio"] {
+            width: 45%;
+            cursor: pointer;
+            text-align: right;
+            margin-top: 10px;
+            font-size: 12px;
+        }
+    
+    
+        .NAMES .type label {
+            cursor: pointer;
+        }
+    
+        .NAMES .type {
+            margin-top: 10px;
+        }
+    
+        .NAMES .type p {
+            /* color: #00a8ff; */
+            font-size: 14px;
+            font-weight: 700;
+        }
+    
+        .NAMES button {
+            border: none;
+            outline: none;
+            border-radius: 6px;
+            font-size: 14px;
+            padding: 5px;
+            margin: 20px 0;
+            cursor: pointer;
+            transition: all 0.5s;
+            background-color: #0097e6;
+            transition: all 0.3s ease-in-out;
+            color: #fff;
+        }
+        .NAMES button:hover{
+            background-color: #00a8ff;
+        }
+
+        header .text h3 {
+            color: #0097e6;
+            font-size: 16px;
+        }
+
+        header .text p {
+            color: #00a8ff;
+            font-size: 12px;
+
+        }
+        .table-container {
+            overflow-x: auto;
+            margin-top: 80px;
+        }
+
+        .timetable {
+            border-collapse: collapse;
+            width: 99%;
+            /* max-width: 800px; */
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: auto;
+            margin-top: 5%;
+            color: #000;
+            font-size: 14px;
+        }
+
+        .timetable th,
+        .timetable td {
+            padding: 5px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+}
